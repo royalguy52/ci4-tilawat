@@ -12,7 +12,7 @@ class Health extends ResourceController
 
         return $this->respond([
             'status'      => 'ok',
-            'message'     => 'Tilawat API is running',
+            'message'     => 'Updated Tilawat API is running',
             'environment' => $env,
             'time'        => date('c'),
         ]);
