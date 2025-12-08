@@ -14,3 +14,9 @@ $routes->group('api/auth', ['namespace' => 'App\Controllers\Api'], static functi
     $routes->get('me', 'Auth::me');
 });
 
+$routes->group('api/courses', ['namespace' => 'App\Controllers\Api'], static function($routes) {
+    $routes->get('/', 'Course::index');
+    $routes->post('(:num)/enroll', 'Course::enroll/$1');
+});
+
+
